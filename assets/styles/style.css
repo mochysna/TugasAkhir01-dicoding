@@ -172,7 +172,7 @@ footer {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 786px) {
 
     main {
         flex-direction: column;
@@ -227,7 +227,7 @@ footer {
 
 
     .logo-image {
-        width: 200px;
+        width: 100px;
         object-fit: cover;
         object-position: center;
     }
