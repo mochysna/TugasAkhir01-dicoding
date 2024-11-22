@@ -65,10 +65,16 @@ main {
 }
 
 #content {
-    flex: 5;
+
     display: flex;
+    flex: 3;
     flex-flow: column nowrap;
     gap: 1rem 2rem;
+}
+
+article {
+    flex: auto;
+    flex-direction: column;
 }
 
 aside {
@@ -77,6 +83,7 @@ aside {
 }
 
 .card {
+    display: flex;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
@@ -104,6 +111,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 20px;
     padding-top: 1rem;
 }
 
@@ -113,12 +121,12 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 1rem;
-    gap: 20px
+    gap: 20px;
 }
 
 .member-item {
     position: relative;
-    width: 240px;
+    width: 250px;
     text-align: center;
     background-color: whitesmoke;
     padding: 15px;
@@ -137,25 +145,33 @@ h3 {
     flex-wrap: nowrap;
     justify-content: space-around;
     gap: 20px;
+
 }
 
 .album-item {
+    display: flex;
     position: relative;
-    width: 50em;
     text-align: center;
     background-color: #fff;
+    justify-content: center;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .album-item img {
     width: 100%;
+    object-fit: contain;
+    object-position: center;
     border-radius: 10px;
 }
 
+.album-content {
+    width: 100%;
+}
 
 .profile img {
     width: 200px;
+
 }
 
 
@@ -178,6 +194,7 @@ footer {
         flex-direction: column;
 
     }
+
 
 
     #content,
